@@ -9,6 +9,7 @@ void main() {
 class MyApp extends StatelessWidget {
   //const MyApp({Key? key}) : super(key: key); // Fixed the constructor signature
   const MyApp({super.key, Key? appKey});
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
 class WeatherApp extends StatefulWidget {
   //const WeatherApp({Key? key}): super(key: key); // Fixed the constructor signature
   const WeatherApp({super.key, Key? appKey});
+
   @override
   State<WeatherApp> createState() => _WeatherAppState();
 }
